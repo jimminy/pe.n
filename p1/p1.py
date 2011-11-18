@@ -14,6 +14,6 @@ def sum_multiples(factors, n, m):
 
 F = [3,5]
 n = 0
-m = 10
+m = 1000
 
 print sum_multiples(F, n, m)

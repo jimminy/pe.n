@@ -13,6 +13,15 @@ def fib_lt(max, x = 0, seq = []):
         x = seq[-1]
     return seq[:-1]
 
-n = 4000000
-print fib_lt(n)
+def sum_even(seq):
+    result = 0
+    i = 0
+    x = len(seq)
+    while(i<x):
+        if(seq[i]%2==0):
+            result = result + seq[i]
+        i = i+1
+    return result
 
+n = 4000000
+print sum_even(fib_lt(n))
